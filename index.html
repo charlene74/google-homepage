@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>
+            This is my Google Homepage
+        </title>
+        <style>
+            .wrapper a {
+               /* display: flex;
+                flex-direction: row; */
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 13px;
+                line-height: 24px;
+                padding: 15px;
+                color: black;
+              /*  float: right; */
+            }
+            a {
+                text-decoration: none;
+            }
+            a:visited {
+                color: black;
+                text-decoration: none;
+            }
+            #maori a {
+                color: #7851A9;
+            }
+
+            .wrapper, .header { 
+                justify-content: space-between;
+                float: right;
+                }
+
+            .center {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+            #google-logo {
+                padding-top: 110px;
+            }
+            /* #searchbar {
+                padding: 15px;
+                border-radius: 10%;
+            } */
+           /* input {
+                width: 425px;
+                border-radius: 20px;
+                border: 1px solid lightgrey;
+                margin: 18px;
+                height: 35px;
+            } */
+            .searchContainer {
+                display: inline-flex;
+                flex: 1 1 300px;
+                position: relative;
+                overflow: hidden;
+                width: 425px;
+                border-radius: 20px;
+                border: 1px solid lightgrey;
+                margin: 18px;
+                height: 35px;
+
+            }
+            .searchIcon {
+                padding: 0.5rem;
+            }
+            .searchBox {
+                border: 0;
+                padding: 0.5rem 0.5rem 0.5rem 0;
+                flex: 1;
+                color: grey;
+            }
+            #s {
+                color: silver;
+            }
+            #gs, #lucky {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                margin: 11px 4px;
+                padding: 0px 16px;
+                height: 35px;
+                font-size: 14px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            /* #gs {
+                margin-right: 5px;
+            }
+           #lucky {
+               margin-left: 5px;
+           } */
+           #maori {
+               font-size: 13px;
+               font-family: Arial, Helvetica, sans-serif;
+               margin: 20px;
+           }
+            #adv, #bus, #abo, #how {
+                float: left;
+            }
+
+            #pri, #ter, #set {
+                float: right;
+            }
+            #pri {
+                margin-right: 20px;
+            }
+            .navbottom a {
+                padding: 10px;
+            }
+            .navbottom {
+                line-height: 40px;
+                width: 100%;
+                border: 1px solid #e7e7e7;
+                background-color: #f3f3f3;
+                border-right: 1px solid #bbb;
+                bottom: 0;
+            }
+
+            .footer {
+                display: block; 
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                line-height: 40px;
+                width: 100%;
+                border: 1px solid #e7e7e7;
+                background-color: #f3f3f3;
+                border-right: 1px solid #bbb;
+                overflow: hidden;
+                margin-top: 50px;
+                position: fixed;
+            }
+            
+           /* #nz {
+                padding: 100000px;
+                margin: 100px;
+            }
+           */
+        </style>
+    </head>    
+       
+        <body>
+            <header>
+                <div class="header">
+                  <!--  <span id="headernav"></span> -->
+                 <div class="wrapper">
+                        <a href="#">Gmail</a>
+                        <a href="#">Images</a>
+                        <a href="#"><i class="fa fa-th"></i></a>
+                        <a href="#"><i class="fa fa-user-circle"></i></a>
+                 </div>
+                 </div>
+            </header>
+            <main>
+                <div class="center" id="google-logo">
+                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+                </div>
+                <div class="center"> 
+                    <form>
+                            <div class="searchContainer">
+                                 <i class="fa fa-search searchIcon" id="s"></i>
+                                <!--- <i class="fa fa-microphone" id="mic"></i> -->
+                                     <input class="searchBox" type="search" id="searchbar" name="search">
+                            </div>
+                    </form>
+                </div>
+                <div class="center button">
+                    <button type="button" id="gs">Google Search</button>
+                    <button type="button" id="lucky">I'm Feeling Lucky</button>
+                </div>
+                <div class="center" id="maori">
+                    Google offered in: <a href="#"> &nbsp;Maori</a>
+                </div>
+            </main>
+              
+                <footer>
+                    <span class="bottom">
+                       <!--- <div class="footer">
+                            <div id="nz">
+                              New Zealand
+                            </div> -->
+                         <div class="footer navbottom">
+                            <a href="#" id="adv">Advertising</a>
+                            <a href="#" id="bus">Business</a>
+                            <a href="#" id="abo">About</a>
+                            <a href="#" id="how">How Search Works</a>
+                            <a href="#" id="pri">Privacy</a>
+                            <a href="#" id="ter">Terms</a>
+                            <a href="#" id="set">Settings</a>
+                        </div>
+                    </div>
+                    </span>
+                </footer>
+        </body> 
+   
+</html>
